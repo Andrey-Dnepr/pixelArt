@@ -1,0 +1,30 @@
+.paintbox {
+    width: 500px;
+    height: 500px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(20, 25px);
+    grid-template-rows: auto;
+}
+.pixel {
+    width: 25px;
+    height: 25px;
+    border-style: dotted;
+    border-width: 0.5px;
+    background-color: antiquewhite;
+}
+.pixelCircle {
+    border: none;
+    background-color: rgb(59, 53, 241);
+    border-radius: 100%;
+}
+.btn {
+    width: 50px;
+    &__wrap {
+        width: 120px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
