@@ -1,29 +1,64 @@
 .paintbox {
-    width: 500px;
-    height: 500px;
-    background-color: antiquewhite;
+    width: 550px;
+    height: 550px;
+    background-color: rgb(239, 248, 247);
     margin: 0 auto;
     margin-top: 20px;
     display: grid;
+    justify-content: center;
+    align-content: center;
     grid-template-columns: repeat(20, 25px);
     grid-template-rows: auto;
+    &__longstep {
+        border-style: dashed;
+        border-color: green;
+    }
 }
 .pixel {
     width: 25px;
     height: 25px;
     border-style: dotted;
     border-width: 0.5px;
-    background-color: antiquewhite;
+    background-color: rgb(239, 248, 247);
+    &:hover {
+        cursor: pointer;
+    }
+    &_border-none {
+        border: none;
+    }
 }
 .pixelCircle {
     border: none;
     background-color: rgb(59, 53, 241);
-    border-radius: 100%;
+    // border-radius: 50%;
 }
 .btn {
     width: 50px;
+    height: 50px;
+    border-radius: 15%;
+    font-size: 13px;
+    background-color: rgb(81, 167, 242);
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 4px gray;
+    transition: 0.5s all;
+    &:focus {
+        outline: none;
+    }
+    &__deactivated {
+        background-color: rgb(239, 248, 247);
+        color: #000000;
+        box-shadow: 2px 2px 3px gray;
+    }
+    &_red {
+        background-color: rgb(238, 59, 59);
+        color: #ffffff;
+    }
     &__wrap {
-        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
         margin: 0 auto;
         margin-top: 20px;
     }
