@@ -1,0 +1,35 @@
+.swatchy-element {
+    margin: 8px 0;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.swatchy-swatches {
+    display: grid;
+    grid-template-columns: repeat(11, 24px);
+    justify-items: center;
+    grid-gap: 8px 2px;
+}
+
+.swatchy-color-button {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+}
+
+.swatchy-color-button {
+    cursor: pointer;
+}
+
+.swatchy-display {
+    margin: 4px;
+    height: 48px;
+    max-width: 48px;
+    border-radius: 8px;
+    border: none;
+}
+
