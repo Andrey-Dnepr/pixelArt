@@ -17,8 +17,8 @@
 .pixel {
     width: 25px;
     height: 25px;
-    border-style: dotted;
-    border-width: 0.5px;
+    border-style: solid;
+    border-width: 1px;
     background-color: rgb(239, 248, 247);
     &:hover {
         cursor: pointer;
@@ -52,7 +52,9 @@
     }
     &__wrap {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
         width: 500px;
         margin: 0 auto;
         margin-top: 20px;
@@ -62,9 +64,10 @@
     }
     &_color_wrap {
         display: flex;
+        gap: 20px;
         flex-wrap: wrap;
         width: 140px;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 }
@@ -78,9 +81,7 @@
         display: block;
         width: 50px;
         height: 50px;
+        border-radius: 15%;
+        opacity: 1;
     }
-    top: 30px;
-    left: 130px;
-    position: absolute;
-    
 }

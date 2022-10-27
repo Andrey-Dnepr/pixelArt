@@ -1,0 +1,34 @@
+@media (max-width: 769px) {
+    .paintbox {
+        width: 350px;
+        height: 350px;
+        margin-top: 20px;
+        grid-template-columns: repeat(20, 15px);
+    }
+    .pixel {
+        width: 15px;
+        height: 15px;
+        border-style: dotted;
+        &_border-none {
+            border: none;
+        }
+    }
+    .btn {
+        &__wrap {
+            width: 350px;
+        }
+        &_color_wrap {
+            position: relative;
+            justify-content: left;
+        }
+    }
+    .long-step, .one-step {
+        display: none;
+    }
+    .swatchy-element {
+        top: -363px;
+        transform: none;
+        left: 20px;
+        max-width: 350px;
+    }
+}

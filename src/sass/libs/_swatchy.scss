@@ -1,10 +1,13 @@
 .swatchy-element {
-    margin: 8px 0;
     padding: 12px;
     background: white;
     border-radius: 8px;
     max-width: 400px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: absolute;
+    top: 126px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .swatchy-swatches {
@@ -26,10 +29,12 @@
 }
 
 .swatchy-display {
-    margin: 4px;
-    height: 48px;
-    max-width: 48px;
+    margin: 0px;
+    height: 50px;
+    max-width: 50px;
     border-radius: 8px;
     border: none;
+    box-shadow: 2px 2px 3px gray;
+    opacity: 1;
 }
 

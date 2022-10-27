@@ -76,7 +76,6 @@ function Swatchy(
             function selectColor(e) {
                 let input = document.querySelectorAll('.swatchy-output').item(id)
                 let newColor = e.target.getAttribute('data-swatchy-color')
-                input.setAttribute('value', newColor)
                 input.setAttribute('data-swatchy-color', newColor)
                 input.setAttribute('style', 'background-color: ' + newColor + '; color: ' + newColor + ';')
                 if (autoClose) {
